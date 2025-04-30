@@ -15,7 +15,7 @@ def get_redgifs_token():
         print(f"[Redgifs Auth] Unexpected error: {e}")
     return None
 
-def crawl_redgifs(limit=30):
+def crawl(limit=30):
     token = get_redgifs_token()
     if not token:
         return []
